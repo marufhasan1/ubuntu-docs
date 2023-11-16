@@ -44,7 +44,7 @@ glance
 
 ---
 
-### Copy | Move | Make File | Rename File | Make Directory
+### Copy, Move, Make File, Rename File, Make Directory
 
 To copy use `cp` command:
 
