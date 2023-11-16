@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Basic Command
+title: Basic Commandd
 nav_order: 2
 ---
 # Basic Command
