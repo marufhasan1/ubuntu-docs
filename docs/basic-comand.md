@@ -10,6 +10,6 @@ Basic Commands
 
 To remove a application compleatly use `apt purge` command.
 
-```cmd
+```
 sudo apt-get purge --auto-remove packagename
 ```
