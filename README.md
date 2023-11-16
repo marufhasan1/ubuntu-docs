@@ -1,2 +1,2 @@
-# ubuntu_docs
+# Ubuntu Documentation
 Ubuntu Server Documentation
