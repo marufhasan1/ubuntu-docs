@@ -3,8 +3,7 @@ layout: default
 title: Basic Commands
 nav_order: 2
 ---
-Basic Commands
----
+# Basic Commands
 
 {: .no_toc }
 
