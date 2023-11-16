@@ -1,6 +1,6 @@
 remote_theme: https://github.com/just-the-docs/just-the-docs
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-# title: [Ubuntu Docs]
-# description: [Site Description]
-footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+title: [Ubuntu Docs]
+description: [Essential Commands for Linux Ubuntu]
+footer_content: "Copyright &copy; 2023 <a href=\"https://marufhasan.net\">Maruf Hasan</a>"
