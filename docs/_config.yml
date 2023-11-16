@@ -2,6 +2,6 @@ remote_theme: https://github.com/just-the-docs/just-the-docs
 # remote_theme: rundocs/jekyll-rtd-theme
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-title: [Ubuntu Docs]
-description: [Essential Commands for Linux Ubuntu]
+title: Ubuntu Docs
+description: Essential Commands for Linux Ubuntu
 footer_content: "Copyright &copy; 2023 <a href=\"https://marufhasan.net\">Maruf Hasan</a>"
