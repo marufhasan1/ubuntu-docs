@@ -6,7 +6,6 @@ nav_order: 2
 Basic Commands
 ---
 
-## Table of contents
 {: .no_toc }
 
 <details open markdown="block">
