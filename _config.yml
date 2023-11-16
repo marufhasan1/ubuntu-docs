@@ -1,4 +1,4 @@
-remote_theme: https://github.com/benbalter/retlab
+remote_theme: https://github.com/just-the-docs/just-the-docs
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 # title: [Ubuntu Docs]
