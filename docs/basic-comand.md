@@ -21,6 +21,7 @@ To remove a application compleatly use `apt purge` command.
 ```console
 sudo apt purge --auto-remove packagename
 ```
+---
 
 ### Ubuntu System Monitor Tools
 
