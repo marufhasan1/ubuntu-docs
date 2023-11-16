@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Web Server
+title: Web Server Configuration
 nav_order: 3
 has_children: true
 ---
