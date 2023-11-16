@@ -7,10 +7,16 @@ Basic Commands
 ---
 
 ## Table of contents
-{: .no_toc .text-delta }
+{: .no_toc }
 
-1. TOC
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+- TOC
 {:toc}
+</details>
 
 ---
 
