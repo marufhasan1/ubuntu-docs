@@ -74,3 +74,13 @@ To make new directory use `mkdir` command:
 ```console
 mkdir directory_name
 ```
+
+---
+
+### Check IP Address
+
+To check your IP Address use following command:
+
+```console
+ip addr
+```
