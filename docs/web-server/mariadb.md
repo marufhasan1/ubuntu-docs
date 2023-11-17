@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install MariaDB
+title: MariaDB
 nav_order: 5
 parent: Web Server Configuration
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install PHP
+title: PHP
 nav_order: 2
 parent: Web Server Configuration
 ---
