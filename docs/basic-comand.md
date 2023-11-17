@@ -29,7 +29,7 @@ sudo apt purge --auto-remove packagename
 
 ### System Monitor Tools
 
-To monitor your system you can use [Glances](https://nicolargo.github.io/glances/) to install it:
+To monitor your system you can use [Glances](https://nicolargo.github.io/glances/), to install it:
 
 ```console
 sudo apt install glances
