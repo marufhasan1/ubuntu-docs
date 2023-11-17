@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Install MariaDB & PHPMyAdmin
+title: Install MariaDB
 nav_order: 5
 parent: Web Server Configuration
 ---
-# Install MariaDB & PHPMyAdmin
+# Install MariaDB
