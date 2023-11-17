@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install Apache
+title: Apache
 nav_order: 1
 parent: Web Server Configuration
 ---
