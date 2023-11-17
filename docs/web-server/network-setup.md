@@ -6,34 +6,30 @@ parent: Web Server Configuration
 ---
 # Configure Network with Static IP
 
-We will use `vsftpd` to configure ftp server.
-
-Install `vsftpd`:
+In my case i will set my Server IP into `192.168.47.70`, to do this locate the `netplan` configuration file.
 ```console
-sudo apt install vsftpd
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+And make change like this:
+
+```yml
+network:
+  ethernets:
+    eno1:
+      addresses:
+        - 192.168.47.70/24
+#        - 192.168.47.71/24 You can also set another ip like this
+      routes:
+         - to: default
+           via: 192.168.47.1 #This is the Gateway
+      nameservers:
+        addresses: [8.8.8.8]
+  version: 2
+  renderer: networkd
 ```
 
-to change some basic configuration we have to update **`/etc/vsftpd.conf`** file
-
-```console
-sudo nano /etc/vsftpd.conf
-```
-
-Make sure the following configurtion:
-
-```
-local_enable=YES
-write_enable=YES
-```
-
-You also may need to change the root directory of FTP Server like this:
-
-```
-local_root=/var/www/html
-```
-
-After the **`vsftpd.conf`** file update restart the application
+After making the change save the file and apply netplan configuration:
 
 ```console
-sudo systemctl restart vsftpd
+netplan apply
 ```
