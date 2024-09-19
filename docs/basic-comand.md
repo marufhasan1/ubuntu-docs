@@ -84,3 +84,49 @@ To check your IP Address use following command:
 ```console
 ip addr
 ```
+
+---
+
+### Make an User
+To make a new user
+```console
+sudo adduser ftpuser
+```
+### Steps to Add a User to the `sudo` Group:
+
+1. **Run the following command to add the user to the `sudo` group**:
+
+   ```bash
+   sudo usermod -aG sudo username
+   ```
+
+   Replace `username` with the actual username of the user you want to add.
+
+   - The `-aG` flag adds the user to the group (`sudo` in this case) without removing them from any other groups they are in.
+
+2. **Verify the User is in the `sudo` Group**:
+   After adding the user, you can verify that they are in the `sudo` group by running:
+
+   ```bash
+   groups username
+   ```
+
+   This will show all groups the user is part of. Look for `sudo` in the list.
+
+3. **Switch to the User Account (Optional)**:
+   To test if the user has `sudo` privileges, you can switch to that user:
+
+   ```bash
+   su - username
+   ```
+
+4. **Test the `sudo` Privileges**:
+   Now, try running a command with `sudo`:
+
+   ```bash
+   sudo whoami
+   ```
+
+   You should see the output `root` if the user has been successfully added to the `sudoers` list.
+
+---
