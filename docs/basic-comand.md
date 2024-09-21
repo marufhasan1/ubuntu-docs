@@ -130,3 +130,44 @@ sudo adduser ftpuser
    You should see the output `root` if the user has been successfully added to the `sudoers` list.
 
 ---
+### Change TimeZone
+To change the time zone on an Ubuntu server, follow these steps:
+
+1. **Check the current time zone:**
+   ```bash
+   timedatectl
+   ```
+
+2. **List available time zones:**
+   ```bash
+   timedatectl list-timezones
+   ```
+
+   You can scroll through the list or use `grep` to search for a specific time zone:
+   ```bash
+   timedatectl list-timezones | grep <Region>
+   ```
+
+   For example, to search for time zones related to "America":
+   ```bash
+   timedatectl list-timezones | grep America
+   ```
+
+3. **Set the desired time zone:**
+   Use the `timedatectl set-timezone` command followed by the chosen time zone.
+   ```bash
+   sudo timedatectl set-timezone <Your_Time_Zone>
+   ```
+
+   Example:
+   ```bash
+   sudo timedatectl set-timezone America/New_York
+   ```
+
+4. **Verify the change:**
+   After setting the time zone, verify it using:
+   ```bash
+   timedatectl
+   ```
+
+That's it! Your Ubuntu server will now use the new time zone.
