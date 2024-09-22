@@ -171,3 +171,57 @@ To change the time zone on an Ubuntu server, follow these steps:
    ```
 
 That's it! Your Ubuntu server will now use the new time zone.
+
+---
+###Cron Job Setup
+
+To create a cron job in Ubuntu, follow these steps:
+
+### 1. Open the Crontab
+To edit the cron jobs for your user, open the crontab with this command:
+
+```bash
+crontab -e
+```
+
+If it's your first time, it may ask you to choose an editor. You can select your preferred one (e.g., nano, vim).
+
+### 2. Add a Cron Job
+Cron jobs are written in the following format:
+
+```bash
+* * * * * /path/to/script_or_command
+```
+
+The five asterisks (`* * * * *`) represent the schedule for running the job:
+
+- **First**: Minute (0 - 59)
+- **Second**: Hour (0 - 23)
+- **Third**: Day of the month (1 - 31)
+- **Fourth**: Month (1 - 12)
+- **Fifth**: Day of the week (0 - 7) (0 or 7 is Sunday)
+
+For example, if you want to run a script every day at 3:30 AM, you would add:
+
+```bash
+30 3 * * * /path/to/your/script.sh
+```
+
+### 3. Save and Exit
+After adding the job, save the file (in nano, it's `CTRL+O` to write out and `CTRL+X` to exit).
+
+### 4. Verify the Cron Job
+You can list your cron jobs with this command:
+
+```bash
+crontab -l
+```
+
+### Example
+If you want to run a backup script (`backup.sh`) every day at 2 AM, your cron entry would look like this:
+
+```bash
+0 2 * * * /home/user/backup.sh
+```
+
+This would run `backup.sh` daily at 2:00 AM.
